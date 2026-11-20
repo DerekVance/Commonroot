@@ -1,0 +1,21 @@
+{
+  "name": "@commonroot/web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Commonroot web app (Cloudflare Worker). Never published to npm.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "wrangler deploy --dry-run --outdir dist",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@commonroot/core": "workspace:*"
+  },
+  "devDependencies": {
+    "wrangler": "^4.165.0"
+  }
+}

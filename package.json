@@ -1,33 +1,27 @@
 {
-  "name": "@commonroot/core",
-  "version": "0.0.1",
-  "description": "Same story, other side. Compare how outlets across countries and languages cover the same news. Work in progress.",
-  "main": "index.js",
-  "type": "commonjs",
-  "files": [
-    "index.js",
-    "README.md",
-    "LICENSE"
-  ],
-  "keywords": [
-    "news",
-    "media",
-    "journalism",
-    "perspectives",
-    "translation",
-    "civic-tech"
-  ],
-  "author": "Derek Vance",
+  "name": "commonroot-monorepo",
+  "private": true,
+  "description": "Commonroot: same story, other side. Monorepo for @commonroot packages.",
   "license": "AGPL-3.0-only",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DerekVance/Commonroot.git"
+  "type": "module",
+  "packageManager": "pnpm@10.34.9",
+  "engines": {
+    "node": ">=20"
   },
-  "homepage": "https://github.com/DerekVance/Commonroot#readme",
-  "bugs": {
-    "url": "https://github.com/DerekVance/Commonroot/issues"
+  "scripts": {
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "check": "pnpm run build && pnpm run typecheck && pnpm run test",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm run build && changeset publish",
+    "dev:web": "pnpm --filter @commonroot/web dev"
   },
-  "publishConfig": {
-    "access": "public"
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3",
+    "@types/node": "^22.0.0",
+    "typescript": "~5.9.3",
+    "vitest": "^4.0.0"
   }
 }

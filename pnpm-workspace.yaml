@@ -1,0 +1,8 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+
+# Packages allowed to run install scripts (wrangler's bundler and local runtime).
+onlyBuiltDependencies:
+  - esbuild
+  - workerd

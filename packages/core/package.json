@@ -1,0 +1,37 @@
+{
+  "name": "@commonroot/core",
+  "version": "0.1.0-alpha.0",
+  "description": "Same story, other side. The Commonroot engine: compare how outlets across countries and languages cover one news event.",
+  "license": "Apache-2.0",
+  "author": "Derek Vance (Mycelwright)",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.1.0"
+  },
+  "keywords": ["news", "media", "journalism", "perspectives", "translation", "civic-tech", "llm"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerekVance/Commonroot.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/DerekVance/Commonroot#readme",
+  "bugs": { "url": "https://github.com/DerekVance/Commonroot/issues" },
+  "publishConfig": { "access": "public" }
+}
