@@ -1,13 +1,33 @@
 {
-  "name": "commonroot",
+  "name": "@commonroot/core",
   "version": "0.0.1",
-  "description": "",
+  "description": "Same story, other side — compare how outlets across countries and languages cover the same news. Work in progress.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "type": "commonjs",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "news",
+    "media",
+    "journalism",
+    "perspectives",
+    "translation",
+    "civic-tech"
+  ],
+  "author": "Derek Vance",
   "license": "AGPL-3.0-only",
-  "type": "commonjs"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerekVance/Commonroot.git"
+  },
+  "homepage": "https://github.com/DerekVance/Commonroot#readme",
+  "bugs": {
+    "url": "https://github.com/DerekVance/Commonroot/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
