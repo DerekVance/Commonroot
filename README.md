@@ -41,10 +41,6 @@ pnpm check     # build, typecheck, test everything
 pnpm dev:web   # run the web app locally with wrangler
 ```
 
-## Releasing
-
-Run `pnpm changeset` after changing a published package. The Release workflow opens a "Version packages" PR; merging it publishes the changed packages to npm. It needs an `NPM_TOKEN` repository secret, and runs manually until the first real release (M2).
-
 ## Principles
 
 - Trust comes from transparency: public prompts, public source lists, public method.
