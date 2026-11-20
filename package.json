@@ -1,7 +1,7 @@
 {
   "name": "@commonroot/core",
   "version": "0.0.1",
-  "description": "Same story, other side — compare how outlets across countries and languages cover the same news. Work in progress.",
+  "description": "Same story, other side. Compare how outlets across countries and languages cover the same news. Work in progress.",
   "main": "index.js",
   "type": "commonjs",
   "files": [
